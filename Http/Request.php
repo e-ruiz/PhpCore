@@ -11,6 +11,9 @@
 namespace Core\Http;
 
 
+use Core\Http\Exception;
+
+
 /**
  * Http Request
  *
@@ -89,7 +92,7 @@ class Request
 
 	public static function getUrl()
 	{
-		return new \Core\Http\Url();;
+		return new \Core\Http\Url();
 	}
 		
 	public static function getBody()
@@ -101,7 +104,7 @@ class Request
 		 * @todo parse multpart form data, specially when method is PUT
 		 */
 		if (in_array('multipart/form-data', $contentType))
-			throw new \Exception('Unsupported Media Type', 415);
+			throw new \Core\Http\Exception(415);
 
 		parse_str(file_get_contents("php://input"), $body);
 		

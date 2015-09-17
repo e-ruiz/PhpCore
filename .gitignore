@@ -1,1 +1,19 @@
+# gedit, and maybe others bkp files
+*~
 
+# eclipse project
+# @see https://github.com/github/gitignore/blob/master/Global/Eclipse.gitignore
+*.pydevproject
+.metadata
+.gradle
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.buildpath
+.project
