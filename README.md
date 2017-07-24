@@ -1,4 +1,4 @@
-# PHP Class Tools
+# PHP Tools
 A PHP class collection to make development easier
 
 ## Usage
