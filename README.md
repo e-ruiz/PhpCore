@@ -1,4 +1,4 @@
-# PhpCore (provisory name)
+# PHP Class Tools
 A PHP class collection to make development easier
 
 ## Usage
